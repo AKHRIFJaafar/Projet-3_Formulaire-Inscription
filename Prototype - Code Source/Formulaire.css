@@ -1,0 +1,117 @@
+.container{
+background-image: url("Stars1.jpg");
+width: 800px;
+height: 400px;
+align-items: center;
+}
+#l-nom{
+    color: white;
+    position:absolute;
+    left: 70px;
+    top: 15px;
+}
+#nom{
+    width: 300px;
+    height: 25px;
+    border-radius: 10px;
+    border:1px solid white;
+    background-color: transparent;
+    position: relative;
+    left: 40px;
+    top: 30px;
+}
+#l-prénom{
+    color: white;
+    position:absolute;
+    left: 440px;
+    top: 15px;
+}
+#prénom{
+    width: 300px;
+    height: 25px;
+    border-radius: 10px;
+    border:1px solid white;
+    background-color: transparent;
+    position: relative;
+    left: 100px;
+    top: 30px;
+}
+#l-tél{
+    color: white;
+    position:absolute;
+    left: 70px;
+    top: 90px;
+}
+#tél{
+        width: 400px;
+        height: 25px;
+        border-radius: 10px;
+        border:1px solid white;
+        background-color: transparent;
+        position: relative;
+            left: 40px;
+            top: 80px;
+    }
+    #l-email{
+        color: white;
+        position:absolute;
+        left: 65px;
+        top: 160px;
+    }
+    #email{
+            width: 500px;
+                height: 25px;
+                border-radius: 10px;
+                border:1px solid white;
+                background-color: transparent;
+                position: relative;
+                left: 40px;
+                top: 120px;
+            }
+            #l-adresse{
+                color: white;
+                position:absolute;
+                left: 65px;
+                top: 240px;
+            }
+     #adresse{
+             width: 670px;
+                  height: 25px;
+                    border-radius: 10px;
+                    border:1px solid white;
+                    background-color: transparent;
+                    position: relative;
+                    left: 40px;
+                    top: 170px;
+                }
+#button{
+    width: 150px;
+    height: 50px;
+    color: white;
+    background-color: blue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    position: relative;
+    left: 310px;
+    top: 210px;
+    border-radius: 10px;
+    border: white;
+    box-shadow: white;
+    font-size: 20px;
+
+
+}
+body input{
+    color: skyblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.result-container{
+    width: 400px;
+    height: 400px;
+    background-color: tomato;
+
+
+
+
+}
