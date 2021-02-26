@@ -18,7 +18,7 @@
 
 		<div class="wrapper">
 			<div class="inner">
-				<form action="">
+				<form>
 					<h3>SOLIEVENT</h3>
 					<p></p>
 					<label class="form-group">
@@ -37,13 +37,20 @@
 						<span class="border"></span>
 					</label>
 					
-					
-					<button onclick="afficheName(),affichePhone(),afficheEmail()">Submit 
-						<i class="zmdi zmdi-arrow-right"></i>
-					</button>
+				
 				</form>
+				<button onclick="Information()">Submit 
+					<i class="zmdi zmdi-arrow-right"></i>
+				</button>
 			</div>
 		</div>
-		<div style="height: 300px;" id="affiche"></div>
+		<div class="affichageStyle">
+			<h2 id="titre">Résultats</h2>  
+		   <p id="affiche"></p>
+			  
+		 <button class="affichageStyle hideButton" onclick="window.print()">Imprimé
+			<i class="zmdi zmdi-arrow-right"></i>
+		</button>
+		</div>
 	</body>
 </html>

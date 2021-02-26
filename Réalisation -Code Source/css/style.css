@@ -198,3 +198,22 @@ button {
   .wrapper {
     background: #39459b;
     border: 10px solid #0d99d7; } }
+
+    .affichageStyle{
+      background-color:black;
+    }
+    #titre{
+      text-align: center;
+      color: white;
+    }
+    #affiche{
+      color: white;
+    }
+    @media print {
+      .wrapper, .hideButton{
+          display: none;
+      }
+      #op{
+          color: blue;
+      }
+   }
