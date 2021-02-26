@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>SOLIEVENT</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+		
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- jAVASCRIPT -->
+		<link rel="stylesheet" href="js/main.js">
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+			<div class="inner">
+				<form action="">
+					<h3>SOLIEVENT</h3>
+					<p></p>
+					<label class="form-group">
+						<input type="text" class="form-control" id="name" required>
+						<span>Your Name</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="text" class="form-control" id="phone"  required>
+						<span for="">Your Phone </span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="text" class="form-control" id="email" required>
+						<span for="">Your Email</span>
+						<span class="border"></span>
+					</label>
+					
+					
+					<button onclick="afficheName(),affichePhone(),afficheEmail()">Submit 
+						<i class="zmdi zmdi-arrow-right"></i>
+					</button>
+				</form>
+			</div>
+		</div>
+		<div style="height: 300px;" id="affiche"></div>
+	</body>
+</html>
