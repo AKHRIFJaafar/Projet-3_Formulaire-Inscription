@@ -201,19 +201,20 @@ button {
 
     .affichageStyle{
       background-color:black;
+      width: 700px;
+      margin: auto;
     }
     #titre{
+      padding-top: 20px;
+      margin-bottom: 40px;
       text-align: center;
-      color: white;
+      color:white;
     }
     #affiche{
-      color: white;
+      color: blue;
+      text-align: left;
     }
     @media print {
       .wrapper, .hideButton{
           display: none;
-      }
-      #op{
-          color: blue;
-      }
    }

@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type = "text/javascript" src = "custom.js" ></script>
+    <title>Inscription</title>
+</head>
+
+<body>
+    <div class="container">
+        <form >
+            <h2 id="prototype">PROTTYPE </h2>
+          
+               <label id="Label" >Name</label>
+               <input type="text" class="nom" id="nom" placeholder="Your Name" ><br><br>
+            
+                <label id="Label" >Phone</label>
+                <input type="text"  class="nom" id="numero" placeholder="Your Phone" ><br><br>
+    
+                <label id="Label" >Email</label>
+                <input type="text" id="email" class="nom" placeholder="Your Email" ><br><br><br>
+           
+
+            <button type="button" value="Ajouter" onclick="ShowName()" id="ajouter" >Ajouter</button>
+        </form>
+
+
+    </div>
+
+
+    <div class="container2" id="resultat" >
+        <div>
+        <h3 id="prototype">LISTE DES PARTICIPANTS</h3>
+    </div>
+    <div class="container3">
+        <Button type="button" class="imprimer" id="imprimer" onclick="window.print()" >Imprimer</Button>
+    </div>
+    </div>
+
+
+    
+    
+</body>
+</html>

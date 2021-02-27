@@ -1,4 +1,4 @@
-function Information(){
+function getFormations(){
   
            var Name = document.getElementById("name").value;
             document.getElementById("affiche").innerHTML += "<b id=op>Nom:</b>&nbsp;" + Name + "<br>";
