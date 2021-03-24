@@ -11,7 +11,7 @@
 
 <body>
     <div class="container">
-        <form >
+        <form action="traitement.php" method="POST">
             <h2 id="prototype">PROTTYPE </h2>
           
                <label id="Label" >Name</label>
@@ -22,9 +22,8 @@
     
                 <label id="Label" >Email</label>
                 <input type="text" id="email" class="nom" placeholder="Your Email" ><br><br><br>
-           
 
-            <button type="button" value="Ajouter" onclick="ShowName()" id="ajouter" >Ajouter</button>
+            <input type="submit" value="Ajouter" id="ajouter" >
         </form>
 
 
