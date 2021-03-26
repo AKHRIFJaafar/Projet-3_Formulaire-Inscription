@@ -11,32 +11,23 @@
 
 <body>
     <div class="container">
-        <form action="traitement.php" method="POST">
+        <form action="donner.php" method="POST">
             <h2 id="prototype">PROTTYPE </h2>
           
                <label id="Label" >Name</label>
-               <input type="text" class="nom" id="nom" placeholder="Your Name" ><br><br>
+               <input type="text" class="nom" name="nom" placeholder="Your Name" ><br><br>
             
                 <label id="Label" >Phone</label>
-                <input type="text"  class="nom" id="numero" placeholder="Your Phone" ><br><br>
+                <input type="text"  class="nom" name="phone" placeholder="Your Phone" 
+                ><br><br>
     
-                <label id="Label" >Email</label>
-                <input type="text" id="email" class="nom" placeholder="Your Email" ><br><br><br>
+                <!-- <label id="Label" >Email</label>
+                <input type="text" class="nom" placeholder="Your Email" ><br><br><br> -->
 
-            <input type="submit" value="Ajouter" id="ajouter" >
+            <input type="submit" value="Ajouter" >
         </form>
 
 
-    </div>
-
-
-    <div class="container2" id="resultat" >
-        <div>
-        <h3 id="prototype">LISTE DES PARTICIPANTS</h3>
-    </div>
-    <div class="container3">
-        <Button type="button" class="imprimer" id="imprimer" onclick="window.print()" >Imprimer</Button>
-    </div>
     </div>
 
 
