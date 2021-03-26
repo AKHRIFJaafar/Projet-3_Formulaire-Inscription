@@ -56,7 +56,7 @@ button {
   transition-property: color;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s; }
-  button i {
+  button {
     margin-left: 10px;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
@@ -95,8 +95,6 @@ button {
       transform: translateX(4px); }
 
 @media (max-width: 767px) {
-  h3 {
-    font-size: 38px; }
 
   .wrapper {
     background: #39459b;
@@ -109,4 +107,5 @@ button {
    }
   }
 body{
-background-image: url('/images/bg-registration-form-7.jpg');  }
+background-image: url('./bg-registration-form-7.jpg'); 
+background-repeat: no-repeat; }
