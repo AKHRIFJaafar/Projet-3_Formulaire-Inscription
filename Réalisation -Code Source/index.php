@@ -18,23 +18,23 @@
 			<div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputEmail4">First Name</label>
-      <input type="text" class="form-control" id="inputEmail4" name="firstname" placeholder="First name">
+      <input type="text" class="form-control" id="inputEmail4" name="firstname" placeholder="First name" required>
     </div>
     <div class="form-group col-md-6">
       <label for="inputPassword4">Last Name</label>
-      <input type="text" class="form-control" id="inputPassword4" name="lastname" placeholder="Last name">
+      <input type="text" class="form-control" id="inputPassword4" name="lastname" placeholder="Last name" required>
     </div>
   </div>
   <div class="form-group">
     <label for="inputAddress">Email</label>
-    <input type="email" class="form-control" id="inputAddress" name="email" placeholder="Example@gmail.col">
+    <input type="email" class="form-control" id="inputAddress" name="email" placeholder="Example@gmail.col" required>
   </div>
   <div class="form-group">
     <label for="inputAddress2">Address</label>
-    <input type="text" class="form-control" id="inputAddress2" name="adress" placeholder="1234 Main St">
+    <input type="text" class="form-control" id="inputAddress2" name="adress" placeholder="1234 Main St" required>
   </div>
 				<button type="submit" class="btn btn-primary">Sign in</button>
-			  </form>
+	 </form>
 </div>
 
 	  

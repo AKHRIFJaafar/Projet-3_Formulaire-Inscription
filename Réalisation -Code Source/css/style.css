@@ -102,7 +102,7 @@ button {
 
 
     @media print {
-      .wrapper, .hideButton{
+      .hideButton {
           display: none;
    }
   }

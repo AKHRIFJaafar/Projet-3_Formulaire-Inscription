@@ -60,58 +60,59 @@ $_SESSION['adress'] =  $adress;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Information</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" media="print" href="./css/print.css">
 </head>
 <body>
-    <div class="row">
-    <div class="col-md-3">
-<h1>First Names</h1>
-<ul>
-    <?php
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Email</th>
+      <th scope="col">Adress</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <?php
         foreach ($firstname as $value) { 
         ?>
-        <li><?php echo $value ?></li>
+        <td><?php echo $value ?></td>
         <?php
         }
     ?>  
-</ul>
-</div>
-<div class="col-md-3">
-<h1>Last Names</h1>
-<ul>
-    <?php
+
+<?php
         foreach ($lastname as $value) { 
         ?>
-        <li><?php echo $value ?></li>
+        <td><?php echo $value ?></td>
         <?php
         }
-    ?>  
-</ul>
-</div>
-<div class="col-md-3">
-<h1>Emails</h1>
-<ul>
-    <?php
+    ?>
+        <?php
         foreach ($email as $value) { 
         ?>
-        <li><?php echo $value ?></li>
+        <td><?php echo $value ?></td>
         <?php
-        }
-    ?>  
-</ul>
-</div>
-<div class="col-md-3">
-<h1>Adresses</h1>
-<ul>
-    <?php
+        }  
+    ?>
+
+<?php
         foreach ($adress as $value) { 
         ?>
-        <li><?php echo $value ?></li>
+        <td><?php echo $value ?></td>
         <?php
         }
     ?>  
-</ul>
-</div>
-</div>
+    </tr>
+ </table>
+ <?php session_destroy(); ?>
+<button type="submit" class="btn hideButton btn-primary" onclick="window.print()" 
+>IMPRIMER</button>
+
+<button type="submit" class=" hideButton btn btn-primary" onclick="session_destroy()"  >DELETE</button>
 
 
 
