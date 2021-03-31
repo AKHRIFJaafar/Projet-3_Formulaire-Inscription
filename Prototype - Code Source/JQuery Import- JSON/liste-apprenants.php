@@ -1,4 +1,4 @@
-[
+
     { "nom":"El Yatim ","prenom":"Omar","email": "elyatim.omar.dev@gmail.com"},
     { "nom":"Sebbar ","prenom":"Najlae","email": "sebbar.najlae.dev@gmail.com"},
     { "nom":"Ajendouz","prenom":"Mohamed Reda","email": "ajendouz.medreda@gmail.com"},
@@ -18,4 +18,3 @@
     { "nom":"Hamid","prenom":"Arhroud","email": "arhroud.hamid.dev@gmail.com"},
     { "nom":"Ennasser","prenom":"Oussama","email": "ennasser.oussama.dev@gmail.com"},
     { "nom":"Dahri","prenom":"Fatima","email": "dahri.fatima.dev@gmail.com"}
-]
