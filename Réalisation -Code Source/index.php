@@ -9,20 +9,19 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="./css/style.css">
-
   </head>
   <body>
 	  <div class="container" >
 		  <h3> SOLIEVENT</h3>
-			<form action="affichage.php" method="GET" >
+			<form action="inscription.php" method="POST" >
 			<div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputEmail4">First Name</label>
-      <input type="text" class="form-control" id="inputEmail4" name="firstname" placeholder="First name" required>
+      <input type="text" class="form-control" id="inputEmail4" name="nom" placeholder="First name" required>
     </div>
     <div class="form-group col-md-6">
       <label for="inputPassword4">Last Name</label>
-      <input type="text" class="form-control" id="inputPassword4" name="lastname" placeholder="Last name" required>
+      <input type="text" class="form-control" id="inputPassword4" name="prenom" placeholder="Last name" required>
     </div>
   </div>
   <div class="form-group">
