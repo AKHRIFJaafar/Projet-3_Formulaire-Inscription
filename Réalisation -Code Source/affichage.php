@@ -10,30 +10,36 @@
  $email     = [];
  $adress    = [];
 
+//  if( isset( $_SESSION['Apprenants'] ) ) {
+//    $email =  $_SESSION['Apprenants] ;
+// }else {
+//    $_SESSION['Apprenants'] =  $email;
+// }
+
 
  // Trouver ou créer le tableau dans Session
- if( isset( $_SESSION['firstname'] ) ) {
-    $firstname =  $_SESSION['firstname'] ;
+ if( isset( $_SESSION['Apprenants'] ) ) {
+    $firstname =  $_SESSION['Apprenants'] ;
  }else {
-    $_SESSION['firstname'] =  $firstname;
+    $_SESSION['Apprenants'] =  $firstname;
  }
 
- if( isset( $_SESSION['lastname'] ) ) {
-    $lastname =  $_SESSION['lastname'] ;
+ if( isset( $_SESSION['Apprenants'] ) ) {
+    $lastname =  $_SESSION['Apprenants'] ;
  }else {
-    $_SESSION['lastname'] =  $lastname;
+    $_SESSION['Apprenants'] =  $lastname;
 }
 
- if( isset( $_SESSION['email'] ) ) {
-    $email =  $_SESSION['firstname'] ;
+if( isset( $_SESSION['Apprenants'] ) ) {
+   $email =  $_SESSION['Apprenants'] ;
+}else {
+   $_SESSION['Apprenants'] =  $email;
+}
+
+ if( isset( $_SESSION['Apprenants'] ) ) {
+    $adress =  $_SESSION['Apprenants'] ;
  }else {
-    $_SESSION['email'] =  $email;
- }
- 
- if( isset( $_SESSION['adress'] ) ) {
-    $adress =  $_SESSION['adress'] ;
- }else {
-    $_SESSION['adress'] =  $adress;
+    $_SESSION['Apprenants'] =  $adress;
  }
 
  // Ajouter le nom du nom dans le tableau
@@ -44,10 +50,10 @@
 
 
  // Enregistrer le tableau dans la session
-$_SESSION['firstname'] =  $firstname;
-$_SESSION['lastname'] =  $lastname;
-$_SESSION['email'] =  $email;
-$_SESSION['adress'] =  $adress;
+$_SESSION['Apprenants'] =  $firstname;
+$_SESSION['Apprenants'] =  $lastname;
+$_SESSION['Apprenants'] =  $email;
+$_SESSION['Apprenants'] =  $adress;
 
 ?>
 
@@ -66,53 +72,25 @@ $_SESSION['adress'] =  $adress;
 <table class="table">
   <thead class="thead-dark">
     <tr>
-      <th scope="col">#</th>
       <th scope="col">First</th>
       <th scope="col">Last</th>
       <th scope="col">Email</th>
       <th scope="col">Adress</th>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <?php
-        foreach ($firstname as $value) { 
-        ?>
-        <td><?php echo $value ?></td>
+  </table>
         <?php
+        foreach ($_SESSION['Apprenants'] as $value) { 
+         echo "<tr>" .$value."</tr>" ;
         }
-    ?>  
+    
+        ?>
 
-<?php
-        foreach ($lastname as $value) { 
-        ?>
-        <td><?php echo $value ?></td>
-        <?php
-        }
-    ?>
-        <?php
-        foreach ($email as $value) { 
-        ?>
-        <td><?php echo $value ?></td>
-        <?php
-        }  
-    ?>
 
-<?php
-        foreach ($adress as $value) { 
-        ?>
-        <td><?php echo $value ?></td>
-        <?php
-        }
-    ?>  
-    </tr>
- </table>
- <?php session_destroy(); ?>
+
+
 <button type="submit" class="btn hideButton btn-primary" onclick="window.print()" 
 >IMPRIMER</button>
-
-<button type="submit" class=" hideButton btn btn-primary" onclick="session_destroy()"  >DELETE</button>
 
 
 
