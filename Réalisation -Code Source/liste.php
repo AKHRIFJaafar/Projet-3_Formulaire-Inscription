@@ -20,8 +20,8 @@
   </tbody>
     </table>  
     <center>
-    <a class=" btn btn-light button btn-lg hideButton" onclick="window.print()" role="button">IMPRIMER</a>  
-<a class="btn button btn-lg btn-light hideButton" href="index.php" role="button">PAGE INSCRIPTION</a>
+    <a class=" btn btn-light btn-lg hideButton" onclick="window.print()" role="button">IMPRIMER</a>  
+<a class="btn  btn-lg btn-light hideButton" href="index.php" role="button">PAGE INSCRIPTION</a>
 </center>
     <!-- <table id="app">
     </table> -->

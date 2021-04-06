@@ -32,8 +32,8 @@ $_SESSION['Personne'] =  $personnes_list;
 	  <div class="container" >
     <h3> MERCI POUR VOTRE INSCRIPTION</h3>
     <center>
-    <a class=" btn btn-light button btn-lg" href="liste.php" role="button">LISTE PARTICIPANTS</a>  
-<a class="btn button btn-lg btn-light" href="index.php" role="button">PAGE INSCRIPTION</a>
+    <a class=" btn btn-light  btn-lg" href="liste.php" role="button">LISTE PARTICIPANTS</a>  
+<a class="btn btn-lg btn-light" href="index.php" role="button">PAGE INSCRIPTION</a>
 </center>
 
 </div>
