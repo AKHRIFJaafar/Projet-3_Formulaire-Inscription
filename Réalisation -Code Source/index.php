@@ -14,7 +14,7 @@
   <body>
 	  <div class="container" >
 		  <h3> SOLIEVENT</h3>
-			<form action="affichage.php" method="GET" >
+			<form action="affichage.php" method="POST" >
 			<div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputEmail4">First Name</label>

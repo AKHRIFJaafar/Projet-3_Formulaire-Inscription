@@ -10,50 +10,63 @@
  $email     = [];
  $adress    = [];
 
-//  if( isset( $_SESSION['Apprenants'] ) ) {
-//    $email =  $_SESSION['Apprenants] ;
-// }else {
-//    $_SESSION['Apprenants'] =  $email;
-// }
-
-
  // Trouver ou créer le tableau dans Session
  if( isset( $_SESSION['Apprenants'] ) ) {
     $firstname =  $_SESSION['Apprenants'] ;
  }else {
     $_SESSION['Apprenants'] =  $firstname;
  }
+ 
+ // Ajouter le Apprenants du Apprenants dans le tableau
+ $firstname[] = @$_POST["firstname"] ;
+ 
+ // Enregistrer le tableau dans la session
+ $_SESSION['Apprenants'] =  $firstname;
+ 
+ 
 
- if( isset( $_SESSION['Apprenants'] ) ) {
-    $lastname =  $_SESSION['Apprenants'] ;
- }else {
-    $_SESSION['Apprenants'] =  $lastname;
+
+// Trouver ou créer le tableau dans Session
+if( isset( $_SESSION['Apprenants'] ) ) {
+   $lastname =  $_SESSION['Apprenants'] ;
+}else {
+   $_SESSION['Apprenants'] =  $lastname;
 }
 
+// Ajouter le Apprenants du Apprenants dans le tableau
+$lastname[] = @$_POST["lastname"] ;
+
+// Enregistrer le tableau dans la session
+$_SESSION['Apprenants'] =  $lastname;
+
+
+// Trouver ou créer le tableau dans Session
 if( isset( $_SESSION['Apprenants'] ) ) {
    $email =  $_SESSION['Apprenants'] ;
 }else {
    $_SESSION['Apprenants'] =  $email;
 }
 
- if( isset( $_SESSION['Apprenants'] ) ) {
-    $adress =  $_SESSION['Apprenants'] ;
- }else {
-    $_SESSION['Apprenants'] =  $adress;
- }
+// Ajouter le Apprenants du Apprenants dans le tableau
+$email[] = @$_POST["email"] ;
 
- // Ajouter le nom du nom dans le tableau
- $firstname[] = $_GET["firstname"] ;
- $lastname[] = $_GET["lastname"] ;
- $email[] = $_GET["email"] ;
- $adress[] = $_GET["adress"] ;
-
-
- // Enregistrer le tableau dans la session
-$_SESSION['Apprenants'] =  $firstname;
-$_SESSION['Apprenants'] =  $lastname;
+// Enregistrer le tableau dans la session
 $_SESSION['Apprenants'] =  $email;
+
+// Trouver ou créer le tableau dans Session
+if( isset( $_SESSION['Apprenants'] ) ) {
+   $adress =  $_SESSION['Apprenants'] ;
+}else {
+   $_SESSION['Apprenants'] =  $adress;
+}
+
+// Ajouter le Apprenants du Apprenants dans le tableau
+$adress[] = @$_POST["adress"] ;
+
+// Enregistrer le tableau dans la session
 $_SESSION['Apprenants'] =  $adress;
+
+// session_destroy();
 
 ?>
 
@@ -67,6 +80,7 @@ $_SESSION['Apprenants'] =  $adress;
     <title>Information</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" media="print" href="./css/print.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 <table class="table">
@@ -78,18 +92,31 @@ $_SESSION['Apprenants'] =  $adress;
       <th scope="col">Adress</th>
     </tr>
   </thead>
-  </table>
-        <?php
-        foreach ($_SESSION['Apprenants'] as $value) { 
-         echo "<tr>" .$value."</tr>" ;
-        }
-    
-        ?>
+  <?php
+  $i=0;
+foreach ($_SESSION["Apprenants"] as $value) {
+    if($i==0){
+        echo "<tr>"; 
+        echo "<td>".$value."</td>";
+        $i++;
+    }elseif($i<=2 ){
+        echo "<td>".$value."</td>";
+        $i++;
+    }else{
+        echo "<td>".$value."</td>";
+            echo "</tr>";
+            
+            $i=0;
+     };
+}
+?>
+</table>
 
 
 
 
-<button type="submit" class="btn hideButton btn-primary" onclick="window.print()" 
+
+<button type="submit" class="btn  hideButton btn-light text-center" onclick="window.print()" 
 >IMPRIMER</button>
 
 
