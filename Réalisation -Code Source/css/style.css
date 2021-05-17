@@ -24,6 +24,8 @@ body {
   background: #39459b;
   border: 10px solid #0d99d7;
   padding: 50px;
+  height: 80vh;
+  margin-top: 10vh;
 }
 
 h3 {
